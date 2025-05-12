@@ -54,7 +54,7 @@ def compare_dates(date1, date2):
     print(f"{date1} es posterior a {date2}")
   elif (date1 < date2):
     print(f"{date1} es anterior a {date2}")
-  else: print("Las fechas deben ser diferentes")
+  else: print("¡Las fechas deben ser diferentes!")
 
 compare_dates(now, thirty_days_from_now)
 

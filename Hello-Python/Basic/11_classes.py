@@ -4,6 +4,7 @@
 
 # Definición
 
+
 class MyEmptyPerson:
     pass  # Para poder dejar la clase vacía
 

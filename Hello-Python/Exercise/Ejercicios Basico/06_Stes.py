@@ -7,7 +7,7 @@ my_set.add(6)
 print(my_set)
 
 # 3. Intenta añadir el número 5 al set {1, 2, 3, 4, 5} nuevamente. ¿Qué sucede?
-#Un set no admite repetidos
+# Un set no admite repetidos
 
 # 4. Verifica si el número 3 está en el set {1, 2, 3, 4, 5} e imprime el resultado.
 print(3 in my_set)

@@ -34,13 +34,18 @@ print(my_other_list.index("Brais"))
 age, height, name, surname = my_other_list
 print(name)
 
-name, height, age, surname = my_other_list[2], my_other_list[1], my_other_list[0], my_other_list[3]
+name, height, age, surname = (
+    my_other_list[2],
+    my_other_list[1],
+    my_other_list[0],
+    my_other_list[3],
+)
 print(age)
 
 # Concatenación
 
 print(my_list + my_other_list)
-#print(my_list - my_other_list)
+# print(my_list - my_other_list)
 
 # Creación, inserción, actualización y eliminación
 

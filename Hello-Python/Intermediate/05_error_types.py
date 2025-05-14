@@ -6,6 +6,7 @@
 # print "¡Hola comunidad!" # Descomentar para Error
 from math import pi
 import math
+
 print("¡Hola comunidad!")
 
 # NameError
@@ -48,4 +49,4 @@ print(type(my_int))
 
 # ZeroDivisionError
 # print(4/0) # Descomentar para Error
-print(4/2)
+print(4 / 2)

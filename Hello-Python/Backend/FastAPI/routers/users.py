@@ -18,18 +18,25 @@ class User(BaseModel):
     age: int
 
 
-users_list = [User(id=1, name="Brais", surname="Moure", url="https://moure.dev", age=35),
-              User(id=2, name="Moure", surname="Dev",
-                   url="https://mouredev.com", age=35),
-              User(id=3, name="Brais", surname="Dahlberg", url="https://haakon.com", age=33)]
+users_list = [
+    User(id=1, name="Brais", surname="Moure", url="https://moure.dev", age=35),
+    User(id=2, name="Moure", surname="Dev", url="https://mouredev.com", age=35),
+    User(id=3, name="Brais", surname="Dahlberg", url="https://haakon.com", age=33),
+]
 
 
 @router.get("/usersjson")
 async def usersjson():  # Creamos un JSON a mano
-    return [{"name": "Brais", "surname": "Moure", "url": "https://moure.dev", "age": 35},
-            {"name": "Moure", "surname": "Dev",
-                "url": "https://mouredev.com", "age": 35},
-            {"name": "Haakon", "surname": "Dahlberg", "url": "https://haakon.com", "age": 33}]
+    return [
+        {"name": "Brais", "surname": "Moure", "url": "https://moure.dev", "age": 35},
+        {"name": "Moure", "surname": "Dev", "url": "https://mouredev.com", "age": 35},
+        {
+            "name": "Haakon",
+            "surname": "Dahlberg",
+            "url": "https://haakon.com",
+            "age": 33,
+        },
+    ]
 
 
 @router.get("/users")
@@ -61,7 +68,6 @@ async def user(user: User):
 
 @router.put("/user/")
 async def user(user: User):
-
     found = False
 
     for index, saved_user in enumerate(users_list):
@@ -77,7 +83,6 @@ async def user(user: User):
 
 @router.delete("/user/{id}")
 async def user(id: int):
-
     found = False
 
     for index, saved_user in enumerate(users_list):

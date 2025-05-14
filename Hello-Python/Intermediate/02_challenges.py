@@ -57,7 +57,6 @@ de Fibonacci empezando en 0.
 
 
 def fibonacci():
-
     prev = 0
     next = 1
 
@@ -78,11 +77,8 @@ Hecho esto, imprime los números primos entre 1 y 100.
 
 
 def is_prime():
-
     for number in range(1, 101):
-
         if number >= 2:
-
             is_divisible = False
 
             for index in range(2, number):

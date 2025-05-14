@@ -24,7 +24,7 @@ def print_date(date):
 
 print_date(now)
 
-year_2023 = datetime(2023, 1, 1) # Año mes y día
+year_2023 = datetime(2023, 1, 1)  # Año mes y día
 
 print_date(year_2023)
 
@@ -52,8 +52,7 @@ print(current_date.year)
 print(current_date.month)
 print(current_date.day)
 
-current_date = date(current_date.year,
-                    current_date.month + 1, current_date.day)
+current_date = date(current_date.year, current_date.month + 1, current_date.day)
 
 print(current_date.month)
 

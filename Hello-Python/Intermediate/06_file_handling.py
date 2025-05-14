@@ -13,7 +13,8 @@ import os
 txt_file = open("my_file.txt", "w+")
 
 txt_file.write(
-    "Mi nombre es Brais\nMi apellido es Moure\n35 años\nY mi lenguaje preferido es Python")
+    "Mi nombre es Brais\nMi apellido es Moure\n35 años\nY mi lenguaje preferido es Python"
+)
 
 # Posiciona el cursor al inicio del fichero
 txt_file.seek(0)
@@ -60,7 +61,8 @@ json_test = {
     "surname": "Moure",
     "age": 35,
     "languages": ["Python", "Swift", "Kotlin"],
-    "website": "https://moure.dev"}
+    "website": "https://moure.dev",
+}
 
 json.dump(json_test, json_file, indent=2)
 

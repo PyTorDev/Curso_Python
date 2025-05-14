@@ -26,6 +26,7 @@ print(sum_two_values_and_add_value(5, 2, sum_five))
 def sum_ten(original_value):
     def add(value):
         return value + 10 + original_value
+
     return add
 
 

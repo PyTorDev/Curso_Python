@@ -1,9 +1,5 @@
 # 1. Crea un diccionario con las claves name, age, y country, asignando valores a cada una. Imprime el diccionario.
-my_dict = {
-  "name": "Aitor",
-  "age": 27,
-  "country": "España"
-}
+my_dict = {"name": "Aitor", "age": 27, "country": "España"}
 print(my_dict)
 # 2. Accede al valor de la clave name en el diccionario.
 print(my_dict["name"])
@@ -21,9 +17,7 @@ del my_dict["country"]
 print(my_dict)
 
 # 6. Crea un diccionario donde las claves sean números del 1 al 5 y los valores sean sus cuadrados (ejemplo: 1: 1, 2: 4, ...).
-my_other_dict = {
-  x: x ** 2 for x in range(1, 6)
-}
+my_other_dict = {x: x**2 for x in range(1, 6)}
 print(my_other_dict)
 
 # 7. Verifica si la clave age está presente en el diccionario {"name": "Brais", "age": 37, "country": "Galicia"}.
